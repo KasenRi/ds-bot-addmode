@@ -1,0 +1,10 @@
+ds-bot-addmode
+Copyright 2026 KasenRi
+
+This product includes code from DS Bot (https://github.com/Fei2411/DS-Bot),
+licensed under the Apache License, Version 2.0:
+  - the DSH_HOME resolution helpers (expandHome, dshHomeOf) in src/host/index.js,
+    from ds-bot/src/host/folders.js.
+
+DS Bot
+Copyright 2026 Fei2411 and the DS Bot contributors

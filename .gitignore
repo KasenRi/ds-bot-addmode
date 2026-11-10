@@ -1,0 +1,4 @@
+node_modules/
+.agy-staff/
+*.tmp
+.DS_Store

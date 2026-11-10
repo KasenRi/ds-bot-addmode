@@ -1,0 +1,56 @@
+{
+  "name": "ds-bot-addmode",
+  "version": "0.1.0",
+  "description": "DS Bot companion plugin that adds DSH Mode (Agent Preset) selection to Bot creation and settings.",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "ds-bot",
+    "agent-preset"
+  ],
+  "homepage": "https://github.com/KasenRi/ds-bot-addmode#readme",
+  "bugs": {
+    "url": "https://github.com/KasenRi/ds-bot-addmode/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KasenRi/ds-bot-addmode.git"
+  },
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "src/",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "node scripts/build-client.mjs",
+    "check": "node scripts/build-client.mjs --check",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.1",
+    "@deepseek-ai/dsh": ">=0.2.2-rc.1",
+    "ds-bot": ">=0.3.2"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
